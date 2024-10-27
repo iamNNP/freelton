@@ -8,7 +8,7 @@ const manifestUrl = 'https://iamnnp.github.io/freelton/tonconnect-manifest.json'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <TonConnectUIProvider manifestUrl={manifestUrl}>
-    <BrowserRouter basename='/freelton'>
+    <BrowserRouter>
       <App />
     </BrowserRouter>
   </TonConnectUIProvider>,
