@@ -3,9 +3,15 @@ import "./App.css";
 import Tasks from "./pages/Onchain";
 import Home from "./pages/Home";
 import Profile from "./pages/Profile";
-import { Routes, Route } from "react-router-dom";
+import { useTelegramBackButton } from './hooks/useTelegramBackButton';
+import { Routes, Route, useNavigate } from "react-router-dom";
 
 function App() {
+  const navigate = useNavigate();
+
+  useTelegramBackButton(() => {
+    navigate("/");
+  })
   return (
     <Routes>
       <Route path="/freelton" element={<Home />} />
