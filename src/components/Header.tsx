@@ -7,10 +7,10 @@ export const Header = () => {
     <header>
       <div className="wrapper site-header__wrapper">
         <nav className="nav">
-          <Link to="https://iamnnp.github.io/freelton/place">Place</Link>
-          <Link to="https://iamnnp.github.io/freelton/take">Take</Link>
-          <Link to="https://iamnnp.github.io/freelton/learn">Learn</Link>
-          <Link to="https://iamnnp.github.io/freelton/profile">Profile</Link>
+          <Link to="/freelton/place">Place</Link>
+          <Link to="/freelton/take">Take</Link>
+          <Link to="/freelton/learn">Learn</Link>
+          <Link to="/freelton/profile">Profile</Link>
         </nav>
         <TonConnectButton />
       </div>
