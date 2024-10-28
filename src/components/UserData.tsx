@@ -3,24 +3,20 @@ import { useTelegram } from '../hooks/useTelegram';
 export const UserData = () => {
   const { user } = useTelegram();
   return (
-    <div className='user_data'>
+    <div className='user__data'>
         {user ? (
           <div>
             <h3>
               Telegram Id
             </h3>
             <div>
-              <b>
-                { user.id }
-              </b>
+              { user.id }
             </div>
             <h3>
               First name
             </h3>
             <div>
-              <b>
-                { user.first_name }
-              </b>
+              { user.first_name }
             </div>
             <h3>
               Last name
