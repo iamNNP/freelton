@@ -49,6 +49,12 @@ body {
   align-items: center;
 }
 
+.user_data {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
 h1 {
   font-size: 3.3em;
   line-height: 1.1;
