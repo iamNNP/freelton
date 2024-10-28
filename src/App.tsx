@@ -7,8 +7,8 @@ import { Routes, Route } from "react-router-dom";
 function App() {
   return (
     <Routes>
-      <Route path={`${process.env.PUBLIC_URL}/`} element={<Home />} />
-      <Route path={`${process.env.PUBLIC_URL}/learn`} element={<Learn />} />
+      <Route path="https://iamnnp.github.io/freelton" element={<Home />} />
+      <Route path="https://iamnnp.github.io/freelton/learn" element={<Learn />} />
     </Routes>
   );
 }
