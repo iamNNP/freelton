@@ -2,12 +2,14 @@ import "./App.css";
 // import React from 'react';
 import Tasks from "./pages/Onchain";
 import Home from "./pages/Home";
+import Profile from "./pages/Profile";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <Routes>
       <Route path="/freelton" element={<Home />} />
+      <Route path="/freelton/profile" element={<Profile />} />
       <Route path="/freelton/tasks" element={<Tasks />} />
     </Routes>
   );
