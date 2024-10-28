@@ -47,17 +47,17 @@ const Tasks = () => {
 
             <div className="task">
               <a>Make a TON transaction</a>
-              <button onClick={connectedWallet ? sendTransaction : () => showAlert("Connect wallet to make a transaction")}>Отправить 0.05 TON</button>
+              <button onClick={connectedWallet ? sendTransaction : () => showAlert("Connect wallet to make a transaction")}>Send 0.05 TON</button>
             </div>
 
             <div className="task">
               <a>Make a TON transaction</a>
-              <button onClick={connectedWallet ? sendTransaction : () => showAlert("Connect wallet to make a transaction")}>Отправить 0.05 TON</button>
+              <button onClick={connectedWallet ? sendTransaction : () => showAlert("Connect wallet to make a transaction")}>Send 0.05 TON</button>
             </div>
 
             <div className="task">
               <a>Make a TON transaction</a>
-              <button onClick={connectedWallet ? sendTransaction : () => showAlert("Connect wallet to make a transaction")}>Отправить 0.05 TON</button>
+              <button onClick={connectedWallet ? sendTransaction : () => showAlert("Connect wallet to make a transaction")}>Send 0.05 TON</button>
             </div>
         </div>
     );
