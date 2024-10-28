@@ -10,7 +10,7 @@ function App() {
   const navigate = useNavigate();
 
   useTelegramBackButton(() => {
-    navigate("/");
+    navigate("/freelton");
   })
   return (
     <Routes>
