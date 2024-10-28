@@ -55,12 +55,12 @@ div, h3 {
   align-items: center;
 }
 
-.user__data {
+/* .user__data {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 h1 {
   font-size: 3.3em;

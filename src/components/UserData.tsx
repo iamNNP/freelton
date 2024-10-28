@@ -7,6 +7,12 @@ export const UserData = () => {
         {user ? (
           <div>
             <h3>
+              Avatar
+            </h3>
+            <div>
+              <img src={ user.photo_url } alt="User avatar" />
+            </div>
+            <h3>
               Telegram Id
             </h3>
             <div>
