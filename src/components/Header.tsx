@@ -10,6 +10,7 @@ export const Header = () => {
           <Link to="/freelton/place">Place</Link>
           <Link to="/freelton/take">Take</Link>
           <Link to="/freelton/learn">Learn</Link>
+          <Link to="/freelton/tasks">Tasks</Link>
           <Link to="/freelton/profile">Profile</Link>
         </nav>
         <TonConnectButton />

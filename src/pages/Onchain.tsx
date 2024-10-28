@@ -8,7 +8,7 @@ import WebApp from '@twa-dev/sdk';
 
 
 
-const Learn = () => {
+const Tasks = () => {
     const { connectedWallet, tonConnectUI } = useTonConnect();
     // const tonClient = useTonClient();
   
@@ -62,4 +62,4 @@ const Learn = () => {
         </div>
     );
 }
-export default Learn;
+export default Tasks;
