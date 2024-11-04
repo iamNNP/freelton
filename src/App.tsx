@@ -5,7 +5,7 @@ import Profile from "./pages/Profile";
 import { useTelegramBackButton } from './hooks/useTelegramBackButton';
 import { Routes, Route, useNavigate } from "react-router-dom";
 import { useTelegramAddUser } from './hooks/useTelegramAddUser';
-import { useTelegram } from "./hooks/useTelegram";
+// import { useTelegram } from "./hooks/useTelegram";
 
 
 function App() {

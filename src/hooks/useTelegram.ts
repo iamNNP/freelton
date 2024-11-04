@@ -13,7 +13,6 @@ interface TelegramUser {
 
 export const useTelegram = () => {
   const [user, setUser] = useState<TelegramUser | null>(null);
-
   useEffect(() => {
     if (WebApp.initDataUnsafe && WebApp.initDataUnsafe.user) {
       const userData = WebApp.initDataUnsafe.user;
