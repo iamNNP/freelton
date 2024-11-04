@@ -14,12 +14,12 @@ export const useTelegramAddUser = () => {
       const languageCode = WebApp.initDataUnsafe.user.language_code;
       const user: User = { telegramUserId, firstName, lastName, username, languageCode };
       
-      console.log(user, `http://${import.meta.env.VITE_SERVER_IP}:${import.meta.env.VITE_SERVER_PORT}/api/add-user`, `http://${import.meta.env.VITE_SERVER_IP}:${import.meta.env.VITE_SERVER_PORT}/api/save-photo`);
-      axios.post(`http://${import.meta.env.VITE_SERVER_IP}:${import.meta.env.VITE_SERVER_PORT}/api/add-user`, user)
+      console.log(user, `http://85.234.107.240:3000/api/add-user`, `http://85.234.107.240:3000/api/save-photo`);
+      axios.post(`http://85.234.107.240:3000/api/add-user`, user)
       .then(() => console.log(''))
       .catch((error) => console.error('Error while adding user: ', error));
-      // console.log(`http://${import.meta.env.VITE_SERVER_IP}:${import.meta.env.VITE_SERVER_PORT}/api/add-user`);
-      axios.post(`http://${import.meta.env.VITE_SERVER_IP}:${import.meta.env.VITE_SERVER_PORT}/api/save-photo`, { telegramUserId })
+      // console.log(`http://85.234.107.240:3000/api/add-user`);
+      axios.post(`http://85.234.107.240:3000/api/save-photo`, { telegramUserId })
         .then(() => console.log(''))
         .catch((error) => console.error('Error while saving user avatar: ', error));
     }
