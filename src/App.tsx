@@ -1,10 +1,12 @@
 import "./App.css";
-// import React from 'react';
 import Tasks from "./pages/Onchain";
 import Home from "./pages/Home";
 import Profile from "./pages/Profile";
 import { useTelegramBackButton } from './hooks/useTelegramBackButton';
 import { Routes, Route, useNavigate } from "react-router-dom";
+import { useTelegramAddUser } from './hooks/useTelegramAddUser';
+import { useTelegram } from "./hooks/useTelegram";
+
 
 function App() {
   const navigate = useNavigate();
@@ -12,6 +14,7 @@ function App() {
   useTelegramBackButton(() => {
     navigate("/freelton");
   })
+  useTelegramAddUser();
   return (
     <Routes>
       <Route path="/freelton" element={<Home />} />
