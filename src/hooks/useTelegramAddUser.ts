@@ -13,6 +13,8 @@ export const useTelegramAddUser = () => {
       const username = WebApp.initDataUnsafe.user.username;
       const languageCode = WebApp.initDataUnsafe.user.language_code;
       const user: User = { telegramUserId, firstName, lastName, username, languageCode };
+      
+      console.log(user, `http://${import.meta.env.VITE_SERVER_IP}:${import.meta.env.VITE_SERVER_PORT}/api/add-user`, `http://${import.meta.env.VITE_SERVER_IP}:${import.meta.env.VITE_SERVER_PORT}/api/save-photo`);
       axios.post(`http://${import.meta.env.VITE_SERVER_IP}:${import.meta.env.VITE_SERVER_PORT}/api/add-user`, user)
       .then(() => console.log(''))
       .catch((error) => console.error('Error while adding user: ', error));
