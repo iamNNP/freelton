@@ -1,22 +1,19 @@
 import { useEffect, useState } from 'react';
 import WebApp from '@twa-dev/sdk';
-
-
-interface TelegramUser {
-  id: number;
-  first_name: string;
-  last_name?: string;
-  username?: string;
-  language_code?: string;
-  photo_url?: string;
-}
+import { User } from "../components/User";
 
 export const useTelegram = () => {
-  const [user, setUser] = useState<TelegramUser | null>(null);
+
+  const [user, setUser] = useState<User | null>(null);
   useEffect(() => {
     if (WebApp.initDataUnsafe && WebApp.initDataUnsafe.user) {
-      const userData = WebApp.initDataUnsafe.user;
-      setUser(userData);
+      const telegramUserId = WebApp.initDataUnsafe.user.id;
+      const firstName = WebApp.initDataUnsafe.user.first_name;
+      const lastName = WebApp.initDataUnsafe.user.last_name;
+      const username = WebApp.initDataUnsafe.user.username;
+      const languageCode = WebApp.initDataUnsafe.user.language_code;
+      const user: User = { telegramUserId, firstName, lastName, username, languageCode };
+      setUser(user);
     }
   }, []);
 

@@ -20,30 +20,7 @@ a {
 
 body {
   margin: 0;
-  /* display: flex; */
-  /* place-items: center; */
-  /* min-width: 320px; */
-  /* min-height: 100vh; */
 }
-
-/* .user__data {
-  height: 70%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.user__data_element {
-  display: flex;
-  justify-content: center;
-} */
-
-
-/* div, h3 {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 
 .site-header__wrapper {
   width: 100%;
@@ -67,7 +44,6 @@ body {
   align-items: center;
 }
 
-
 h1 {
   font-size: 3.3em;
   line-height: 1.1;
@@ -82,16 +58,4 @@ button {
   font-weight: 500;
   font-family: inherit;
   background-color: #71c2b7;
-  /* cursor: pointer;
-  transition: border-color 0.25s; */
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }

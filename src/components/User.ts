@@ -1,5 +1,5 @@
 export interface User {
-    telegramUserId: string;
+    telegramUserId: number;
     firstName: string;
     lastName?: string;
     username?: string;

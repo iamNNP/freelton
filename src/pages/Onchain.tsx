@@ -30,9 +30,9 @@ const Tasks = () => {
         };
   
         const result = await tonConnectUI.sendTransaction(transaction);
-        console.log('Транзакция отправлена:', result);
+        console.log('Transaction successfully sent:', result);
       } catch (error) {
-        console.error('Ошибка отправки транзакции:', error);
+        console.error('Error while sending transaction:', error);
       }
     };
   
