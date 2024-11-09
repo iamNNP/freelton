@@ -7,11 +7,11 @@ import { User } from "../components/User";
 export const useTelegramAddUser = (user: User | any) => {
   useEffect(() => {
     if (user) {
-      console.log(user, `${import.meta.env.VITE_SERVER_DOMAIN}/api/add-user`, `${import.meta.env.VITE_SERVER_DOMAIN}/api/save-photo`);
-      axios.post(`${import.meta.env.VITE_SERVER_DOMAIN}/api/add-user`, user)
+      console.log(user, `https://freelton.org/api/add-user`, `https://freelton.org/api/save-photo`);
+      axios.post(`https://freelton.org/api/add-user`, user)
       .then(() => console.log(''))
       .catch((error) => console.error('Error while adding user: ', error));
-      axios.post(`${import.meta.env.VITE_SERVER_DOMAIN}/api/save-photo`, user.telegramUserId)
+      axios.post(`https://freelton.org/api/save-photo`, user.telegramUserId)
         .then(() => console.log(''))
         .catch((error) => console.error('Error while saving user avatar: ', error));
     }
