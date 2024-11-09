@@ -6,6 +6,7 @@ import { User } from "../components/User";
 
 export const useTelegramAddUser = (user: User | any) => {
   useEffect(() => {
+    console.log(user);
     if (user) {
       console.log(user, `https://freelton.org/api/add-user`, `https://freelton.org/api/save-photo`);
       axios.post(`https://freelton.org/api/add-user`, user)

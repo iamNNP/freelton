@@ -18,6 +18,7 @@ function App() {
   const { user } = useTelegram();
   
   useTelegramAddUser(user);
+  console.log(user);
 
   return (
     <>
