@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import axios from 'axios';
-import WebApp from '@twa-dev/sdk';
+// import WebApp from '@twa-dev/sdk';
 import { User } from "../components/User";
 
 

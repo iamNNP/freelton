@@ -1,4 +1,4 @@
-import { useTelegram } from '../hooks/useTelegram';
+// import { useTelegram } from '../hooks/useTelegram';
 
 export const Freel = () => {
   return (
