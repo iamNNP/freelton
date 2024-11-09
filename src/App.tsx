@@ -18,7 +18,7 @@ function App() {
   const { user } = useTelegram();
   
   useTelegramAddUser(user);
-  console.log(user);
+  console.log("App.tsx: ", user);
 
   return (
     <>
