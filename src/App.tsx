@@ -6,7 +6,8 @@ import Take from "./pages/Take";
 import { useTelegramBackButton } from './hooks/useTelegramBackButton';
 import { Routes, Route, useNavigate } from "react-router-dom";
 import { useTelegram } from "./hooks/useTelegram";
-// import { useTelegramAddUser } from "./hooks/useTelegramAddUser";
+import { useTelegramAddUser } from "./hooks/useTelegramAddUser";
+import { useEffect } from "react";
 
 
 function App() {
@@ -17,9 +18,13 @@ function App() {
   })
   const { user } = useTelegram();
   
-  // useTelegramAddUser({ user });
+  useEffect(() => {
+    if (user) {
+      useTelegramAddUser(user);
+    }
+  }, [user]);
+  
   console.log("App.tsx: ", user);
-
   return (
     <>
       {user ? (
