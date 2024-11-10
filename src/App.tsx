@@ -15,10 +15,8 @@ function App() {
     navigate("/freelton");
   })
   const { user } = useTelegram();
-  if (user) {
-    useTelegramAddUser(user);
-  }
   
+  useTelegramAddUser(user);
   
   console.log("App.tsx: ", user);
   return (
@@ -36,6 +34,8 @@ function App() {
     </>
   );
 }
+
+
 
 
 export default App;
