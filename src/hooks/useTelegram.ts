@@ -13,7 +13,7 @@ export const useTelegram = () => {
       const username = WebApp.initDataUnsafe.user.username;
       const languageCode = WebApp.initDataUnsafe.user.language_code;
       const user: User = { telegramUserId, firstName, lastName, username, languageCode };
-      console.log("useTelegeam: ", user);
+      console.log("useTelegram: ", user);
       setUser(user);
     }
   }, []);

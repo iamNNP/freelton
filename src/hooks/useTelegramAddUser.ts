@@ -18,6 +18,6 @@ export const useTelegramAddUser = (user: User | any) => {
           .catch((error) => console.error('Error while saving user avatar: ', error));
       }
     }
-  }, []);
+  }, [user]);
 };
 

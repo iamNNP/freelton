@@ -17,12 +17,10 @@ function App() {
     navigate("/freelton");
   })
   const { user } = useTelegram();
+  if (user) {
+    useTelegramAddUser(user);
+  }
   
-  useEffect(() => {
-    if (user) {
-      useTelegramAddUser(user);
-    }
-  }, [user]);
   
   console.log("App.tsx: ", user);
   return (
