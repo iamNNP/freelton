@@ -7,8 +7,6 @@ import { useTelegramBackButton } from './hooks/useTelegramBackButton';
 import { Routes, Route, useNavigate } from "react-router-dom";
 import { useTelegram } from "./hooks/useTelegram";
 import { useTelegramAddUser } from "./hooks/useTelegramAddUser";
-import { useEffect } from "react";
-
 
 function App() {
   const navigate = useNavigate();
@@ -38,4 +36,6 @@ function App() {
     </>
   );
 }
+
+
 export default App;
