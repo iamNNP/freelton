@@ -13,7 +13,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <BrowserRouter>
       <AppRoot>
         <App />
-      </AppRoot>,
+      </AppRoot>
     </BrowserRouter>
-  </TonConnectUIProvider>,
+  </TonConnectUIProvider>
 )
