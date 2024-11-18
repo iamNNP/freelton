@@ -7,7 +7,7 @@ export const useTelegram = () => {
   const [user, setUser] = useState<User | null>(null);
   useEffect(() => {
     if (WebApp.initDataUnsafe && WebApp.initDataUnsafe.user) {
-      const telegramUserId = WebApp.initDataUnsafe.user.id;
+      const telegramUserId = WebApp.initDataUnsafe.user.id.toString();
       const firstName = WebApp.initDataUnsafe.user.first_name;
       const lastName = WebApp.initDataUnsafe.user.last_name;
       const username = WebApp.initDataUnsafe.user.username;
