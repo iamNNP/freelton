@@ -12,9 +12,9 @@ export const useTelegramAddUser = (user: User | any) => {
         await axios.post(`https://freelton.org/api/add-user`, user)
         .then(() => console.log(''))
         .catch((error) => console.error('Error while adding user: ', error));
-        await axios.post(`https://freelton.org/api/save-photo`, user.telegramUserId)
-          .then(() => console.log(''))
-          .catch((error) => console.error('Error while saving user avatar: ', error));
+        // await axios.post(`https://freelton.org/api/save-photo`, user.photoUrl)
+        //   .then(() => console.log(''))
+        //   .catch((error) => console.error('Error while saving user avatar: ', error));
       })();
     }
   }, [user]);

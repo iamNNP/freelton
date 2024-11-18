@@ -12,7 +12,9 @@ export const useTelegram = () => {
       const lastName = WebApp.initDataUnsafe.user.last_name;
       const username = WebApp.initDataUnsafe.user.username;
       const languageCode = WebApp.initDataUnsafe.user.language_code;
-      const user: User = { telegramUserId, firstName, lastName, username, languageCode };
+      const photoUrl = WebApp.initDataUnsafe.user.photo_url;
+      
+      const user: User = { telegramUserId, firstName, lastName, username, languageCode, photoUrl };
       console.log("useTelegram: ", user);
       setUser(user);
     }
