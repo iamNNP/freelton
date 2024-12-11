@@ -5,6 +5,7 @@ import { Address, toNano } from '@ton/core';
 import { TonConnectButton } from '@tonconnect/ui-react';
 import { Header } from "../components/Header";
 import WebApp from '@twa-dev/sdk';
+import { Button } from '@telegram-apps/telegram-ui';
 
 
 
@@ -50,15 +51,12 @@ const Tasks = () => {
               <button onClick={connectedWallet ? sendTransaction : () => showAlert("Connect wallet to make a transaction")}>Send 0.05 TON</button>
             </div>
 
-            <div className="task">
-              <a>Make a TON transaction</a>
-              <button onClick={connectedWallet ? sendTransaction : () => showAlert("Connect wallet to make a transaction")}>Send 0.05 TON</button>
-            </div>
-
-            <div className="task">
-              <a>Make a TON transaction</a>
-              <button onClick={connectedWallet ? sendTransaction : () => showAlert("Connect wallet to make a transaction")}>Send 0.05 TON</button>
-            </div>
+            <Button
+              mode="filled"
+              size="s"
+              onClick={connectedWallet ? sendTransaction : () => showAlert("Connect wallet to make a transaction")}>
+              Action
+            </Button>
         </div>
     );
 }
