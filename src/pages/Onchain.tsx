@@ -48,15 +48,13 @@ const Tasks = () => {
 
             <div className="task">
               <a>Make a TON transaction</a>
-              <button onClick={connectedWallet ? sendTransaction : () => showAlert("Connect wallet to make a transaction")}>Send 0.05 TON</button>
-            </div>
-
-            <Button
+              <Button
               mode="filled"
               size="s"
               onClick={connectedWallet ? sendTransaction : () => showAlert("Connect wallet to make a transaction")}>
               Action
-            </Button>
+              </Button>
+            </div>
         </div>
     );
 }

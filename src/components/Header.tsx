@@ -1,5 +1,6 @@
 import { TonConnectButton } from '@tonconnect/ui-react';
 import { Link } from "react-router-dom";
+import { Avatar } from '@telegram-apps/telegram-ui';
 
 
 export const Header = () => {
@@ -11,7 +12,9 @@ export const Header = () => {
           <Link to="/freelton/take">Take</Link>
           <Link to="/freelton/learn">Learn</Link>
           <Link to="/freelton/tasks">Tasks</Link>
-          <Link to="/freelton/profile">Profile</Link>
+          <Link to="/freelton/profile">
+            <Avatar size={20} src="https://avatars.githubusercontent.com/u/84640980?v=4"/>
+          </Link>
         </nav>
         <TonConnectButton />
       </div>
