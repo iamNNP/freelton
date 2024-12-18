@@ -36,7 +36,7 @@ function App() {
           setIsUserInDatabase(true);
         } else {
           setIsUserInDatabase(false);
-          navigate("/freelton/add-profile");
+          navigate("/freelton/profile");
         }
       } catch (error) {
         console.error("Error checking user in database:", error);
@@ -65,14 +65,17 @@ function App() {
     //   )}
     // </>
     <Routes>
-    {isUserInDatabase ? (
-      <>
-        <Route path="/freelton" element={<Home />} />
-        {/* другие маршруты */}
-      </>
-    ) : (
-      <Route path="/freelton/add-profile" element={<AddProfile />} />
-    )}
+      {isUserInDatabase ? (
+        <>
+          <Route path="/freelton" element={<Home />} />
+          <Route path="/freelton" element={<Home />} />
+          <Route path="/freelton/profile" element={<AddProfile />} />
+          <Route path="/freelton/tasks" element={<Tasks />} />
+          <Route path="/freelton/take" element={<Take />} />
+        </>
+      ) : (
+        <Route path="/freelton/add-profile" element={<AddProfile />} />
+      )}
     </Routes>
   );
 }
