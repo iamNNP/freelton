@@ -7,7 +7,7 @@ import { useTelegramBackButton } from './hooks/useTelegramBackButton';
 import { Routes, Route, useNavigate } from "react-router-dom";
 import { useTelegram } from "./hooks/useTelegram";
 import { useEffect, useState } from "react";
-import { useTelegramAddUser } from "./hooks/useTelegramAddUser";
+// import { useTelegramAddUser } from "./hooks/useTelegramAddUser";
 import axios from "axios";
 
 function App() {
