@@ -28,8 +28,7 @@ function App() {
       try {
         const response = await axios.post(
           "https://freelton.org/api/check-user",
-          { telegramUserId: user.telegramUserId },
-          { headers: { "Content-Type": "application/json" } }
+          { telegramUserId: user.telegramUserId }
         );
 
         if (response.data.exists) {
