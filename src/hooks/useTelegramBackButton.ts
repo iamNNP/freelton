@@ -6,7 +6,7 @@ import WebApp from '@twa-dev/sdk';
 
 export const useTelegramBackButton = (onBackButtonClick: () => void) => {
   useEffect(() => {
-    const isHomePage = window.location.pathname === '/';
+    const isHomePage = window.location.pathname === '/freelton';
 
     if (!isHomePage) {
       WebApp.BackButton.show();
